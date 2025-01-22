@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة [اسمك]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="pics/hadi press.png" alt="Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index2.html">من نحن</a>
+                <div class="dropdown">
+                    <a href="index3.html" class="dropbtn">الكتب</a>
+                    <div class="dropdown-content">
+                        <a href="#fiction">روايات</a>
+                        <a href="#non-fiction">غير روائية</a>
+                        <a href="index9.html">كتب الأطفال</a>
+                    </div>
+                </div>
+                <a href="index4.html">المتجر</a>
+                <a href="index5.html">المدونة</a>
+                <a href="index6.html">الفعاليات</a>
+                <a href="index7.html">تواصل معنا</a>
+                <a href="index8.html">الأسئلة الشائعة</a>
+                <a href="#cart" class="cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <div class="search-bar">
+                    <input type="text" placeholder="بحث...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Rest of your HTML content -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuIcon.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuIcon.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <h2>المدونة</h2>
+            <div class="blog-posts">
+                <!-- Example Blog Post -->
+                <article class="blog-post">
+                    <img src="pics/book-library-with-open-textbook.jpg" alt="صورة التدوينة 1">
+                    <div class="blog-content">
+                        <h3>عنوان التدوينة الأولى</h3>
+                        <p class="date">5 أغسطس 2024</p>
+                        <p class="excerpt">هذه مقدمة للتدوينة الأولى. 
+                            لقراءة المزيد.</p>
+                        <a href="#" class="read-more">اقرأ المزيد</a>
+                    </div>
+                </article>
+                <!-- Add more blog posts as needed -->
+            </div>
+            <div class="comment-section">
+                <h3>قسم التعليقات</h3>
+                <div class="comments-list">
+                    <!-- Example Comment -->
+                    <div class="comment">
+                        <p class="comment-author"><strong>أحمد:</strong></p>
+                        <p class="comment-text">تدوينة رائعة! أحببت تفاصيل الكتاب الجديد وأتطلع لقراءته.</p>
+                    </div>
+                    <!-- Add more comments as needed -->
+                </div>
+                <div class="comment-form">
+                    <h4>أضف تعليقًا</h4>
+                    <form action="#" method="post">
+                        <textarea name="comment" rows="4" placeholder="اكتب تعليقك هنا..." required></textarea>
+                        <button type="submit" class="submit-comment">نشر التعليق</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="index2.html">من نحن</a>
+            <a href="index3.html">الكتب</a>
+            <a href="index4.html">المتجر</a>
+            <a href="index5.html">المدونة</a>
+            <a href="index6.html">الفعاليات</a>
+            <a href="index7.html">اتصل بنا</a>
+            <a href="index8.html">الأسئلة الشائعة</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="بريدك الإلكتروني">
+            <button>اشترك</button>
+        </div>
+    </footer>
+</body>
+
+</html>

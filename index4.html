@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadi Press</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="pics/hadi press.png" alt="Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index2.html">من نحن</a>
+                <div class="dropdown">
+                    <a href="index3.html" class="dropbtn">الكتب</a>
+                    <div class="dropdown-content">
+                        <a href="#fiction">روايات</a>
+                        <a href="#non-fiction">غير روائية</a>
+                        <a href="index9.html">كتب الأطفال</a>
+                    </div>
+                </div>
+                <a href="index4.html">المتجر</a>
+                <a href="index5.html">المدونة</a>
+                <a href="index6.html">الفعاليات</a>
+                <a href="index7.html">تواصل معنا</a>
+                <a href="index8.html">الأسئلة الشائعة</a>
+                <a href="#cart" class="cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <div class="search-bar">
+                    <input type="text" placeholder="بحث...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Rest of your HTML content -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuIcon.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuIcon.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+
+    <!-- Shop Section -->
+    <section class="shop">
+        <div class="container">
+            <h2>التسوق</h2>
+            <div class="purchase-options">
+                <div class="purchase-item">
+                    <img src="pics/president isiyas afwerki.jpg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>الرئيس إسياس أفورقي</h4>
+                        <p>مسيرة قيادة الثورة والدولة</p>
+                        <p class="price">السعر:</p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+
+                <div class="purchase-item">
+                    <img src="pics/WhatsApp Image 2024-07-31 at 18.14.01.jpeg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>العودة الطوعية</h4>
+                        <p>معضلات الهجرة عن اللاجئين الإرتريين</p>
+                        <p class="price">السعر:</p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+
+                <div class="purchase-item">
+                    <img src="pics/aldin wa aldawla fi eritrea.jpg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>الدين والدولة في إرتريا وإثيوبيا</h4>
+                        <p>خلال الألف الأول قبل وبعد الميلاد</p>
+                        <p class="price">السعر: </p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="purchase-item">
+                    <img src="pics/ethiopia.jpg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>إثيوبيا</h4>
+                        <p>التوسع وتأسيس الدولة</p>
+                        <p class="price">السعر: </p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="purchase-item">
+                    <img src="pics/hiwar albundigeya.jpg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>حوار البندقية</h4>
+                        <p>الأجهزة الخفية في الحرب الإثيوبية الإرترية</p>
+                        <p class="price">السعر: </p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="purchase-item">
+                    <img src="pics/jawla fi arweket aldiplomasia al eritrea.jpg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>جولة مع أروقة الدبلوماسية الإرترية العربية</h4>
+                <p>مع سليمان أدم سليمان</p>
+                        <p class="price">السعر: </p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="purchase-item">
+                    <img src="pics/kifahi fi harb altahrir.jpg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>كفاحي في حرب التحرير الإرترية</h4>
+                        <p>يوميات المناضل إدريس أدم هنقلا</p>
+                        <p class="price">السعر: </p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+
+
+                <div class="purchase-item">
+                    <img src="pics/len nefterek.jpg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>لن نفترق</h4>
+                        <p>نشوء الحركة السياسية في إرتريا</p>
+                        <p class="price">السعر: </p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="purchase-item">
+                    <img src="pics/religious culture.jpg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>الثقافة السياسية والهوية الوطنية في أفريقيا</h4>
+                        <p>الثقافة السياسية والهوية الوطنية في أفريقيا</p>
+                        <p class="price">السعر: </p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="purchase-item">
+                    <img src="pics/tarikh albahr alahmar.jpg" alt="غلاف الكتاب 1">
+                    <div class="purchase-info">
+                        <h4>تاريخ البحر الأحمر</h4>
+                        <p>من ديليسبس حتى اليوم</p>
+                        <p class="price">السعر:</p>
+                        <a href="#" class="buy-button">شراء نسخة مطبوعة</a>
+                        <a href="#" class="buy-button">شراء نسخة إلكترونية</a>
+                    </div>
+                </div>
+
+                <!-- Add more purchase items as needed -->
+            </div>
+            <div class="secure-payment">
+                <h3>بوابة الدفع الآمنة</h3>
+                <p>نحن نستخدم بوابات الدفع الموثوقة لضمان أمان معاملاتك. يمكنك الدفع باستخدام بطاقات الائتمان أو البطاقات
+                    المصرفية أو الخيارات الأخرى المتاحة.</p>
+            </div>
+            <div class="shopping-cart">
+                <h3>عربة التسوق</h3>
+                <div class="cart-summary">
+                    <p>تحتوي عربة التسوق الخاصة بك على <span id="item-count">0</span> عناصر.</p>
+                    <button class="view-cart">عرض العربة</button>
+                    <button class="checkout">إتمام الشراء</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="index2.html">من نحن</a>
+            <a href="index3.html">الكتب</a>
+            <a href="index4.html">المتجر</a>
+            <a href="index5.html">المدونة</a>
+            <a href="index6.html">الفعاليات</a>
+            <a href="index7.html">اتصل بنا</a>
+            <a href="index8.html">الأسئلة الشائعة</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="بريدك الإلكتروني">
+            <button>اشترك</button>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadi Press</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="pics/hadi press.png" alt="Logo">
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="index2.html">من نحن</a>
+            <div class="dropdown">
+                <a href="index3.html" class="dropbtn">الكتب</a>
+                <div class="dropdown-content">
+                    <a href="#fiction">روايات</a>
+                    <a href="#non-fiction">غير روائية</a>
+                    <a href="index9.html">كتب الأطفال</a>
+                </div>
+            </div>
+            <a href="index4.html">المتجر</a>
+            <a href="index5.html">المدونة</a>
+            <a href="index6.html">الفعاليات</a>
+            <a href="index7.html">تواصل معنا</a>
+            <a href="index8.html">الأسئلة الشائعة</a>
+            <a href="#cart" class="cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            <div class="search-bar">
+                <input type="text" placeholder="بحث...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<!-- Rest of your HTML content -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.querySelector(".menu-icon");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuIcon.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+            menuIcon.classList.toggle("active");
+        });
+    });
+</script>
+
+
+
+
+<!-- Books Section -->
+<section class="books">
+    <div class="container">
+        <h2>الكتب</h2>
+        <div class="book-catalog">
+            <h3>كتالوج الكتب</h3>
+            <div class="book-list">
+                <!-- Example Book Item -->
+                <div class="book">
+                    <img src="pics/zakira.jpeg" alt="Book 2">
+                    <h3>من كنوز الذاكرة</h3>
+                    <p>خلاصة رحلة ثمانين عاما من الغربة</p>
+                    <button>شراء الآن</button>
+                </div>
+                
+                
+                <div class="book">
+                    <img src="pics/Hamadnaka.jpeg" alt="Book 2">
+                    <h3>أرهى حمدناكا</h3>
+                    <p>
+                        من أدغال الثورة في أفريقيا إلى قبة البرلمان السويدي
+                    </p>
+                    <button>شراء الآن</button>
+                </div>
+                
+                
+                <div class="book">
+                    <img src="pics/aziz.jpeg" alt="Book 2">
+                    <h3>عزيز</h3>
+                    <p>رواية عزيز</p>
+                    <button>شراء الآن</button>
+                </div>
+                
+                
+                <div class="book">
+                    <img src="pics/tabsit.jpeg" alt="Book 2">
+                    <h3>التبسيط في فهم التخطيط</h3>
+                    <p>مفاهيم نظرية وخطوات عملية لفهم التخطيط الإستراتيجي
+                    </p>
+                    <button>شراء الآن</button>
+                </div>
+
+                <div class="book-item">
+                    <img src="pics/president isiyas afwerki.jpg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>الرئيس إسياس أفورقي</h4>
+                        <p>مسيرة قيادة الثورة والدولة</p>
+                        <p class="price">السعر:</p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <img src="pics/WhatsApp Image 2024-07-31 at 18.14.01.jpeg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>العودة الطوعية</h4>
+                        <p>معضلات الهجرة عن اللاجئين الإرتريين</p>
+                        <p class="price">السعر: </p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+
+
+                <div class="book-item">
+                    <img src="pics/aldin wa aldawla fi eritrea.jpg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>الدين والدولة في إرتريا وإثيوبيا</h4>
+                        <p>خلال الألف الأول قبل وبعد الميلاد</p>
+                        <p class="price">السعر:.</p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+
+
+                <div class="book-item">
+                    <img src="pics/ethiopia.jpg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>إثيوبيا</h4>
+                        <p>التوسع وتأسيس الدولة</p>
+                        <p class="price">السعر: </p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+
+
+                <div class="book-item">
+                    <img src="pics/hiwar albundigeya.jpg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>حوار البندقية</h4>
+                        <p>الأجهزة الخفية في الحرب الإثيوبية الإرترية</p>
+                        <p class="price">السعر: </p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="book-item">
+                    <img src="pics/jawla fi arweket aldiplomasia al eritrea.jpg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>جولة مع أروقة الدبلوماسية الإرترية العربية</h4>
+                        <p>مع سليمان أدم سليمان</p>
+                        <p class="price">السعر: </p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+
+
+                <div class="book-item">
+                    <img src="pics/kifahi fi harb altahrir.jpg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>كفاحي في حرب التحرير الإرترية</h4>
+                        <p>يوميات المناضل إدريس أدم هنقلا</p>
+                        <p class="price">السعر: </p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <img src="pics/len nefterek.jpg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>لن نفترق</h4>
+                        <p>نشوء الحركة السياسية في إرتريا</p>
+                        <p class="price">السعر: </p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+
+                <div class="book-item">
+                    <img src="pics/religious culture.jpg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>الثقافة السياسية والهوية الوطنية في أفريقيا</h4>
+                        <p>الثقافة السياسية والهوية الوطنية في أفريقيا</p>
+                        <p class="price">السعر: </p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+
+        
+
+
+
+                <div class="book-item">
+                    <img src="pics/tarikh albahr alahmar.jpg" alt="غلاف الكتاب 1">
+                    <div class="book-info">
+                        <h4>تاريخ البحر الأحمر</h4>
+                        <p>من ديليسبس حتى اليوم</p>
+                        <p class="price">السعر:.</p>
+                        <button>اقرأ عينة</button>
+                    </div>
+                </div>
+
+                <!-- Add more book items as needed -->
+
+
+                <div class="book">
+                    <img src="pics/sudan.jpeg" alt="Book 2">
+                    <h3>إكتشف السودان</h3>
+                    <p>إكتشف السودان</p>
+                    <button>شراء الآن</button>
+                </div>
+                
+                
+                
+                <div class="book">
+                    <img src="pics/eritrea.jpeg" alt="Book 2">
+                    <h3>إكتشف إرتريا</h3>
+                    <p>إكتشف إرتريا</p>
+                    <button>شراء الآن</button>
+                </div>
+                
+                
+                
+                
+                <div class="book">
+                    <img src="pics/ethiopiaa.jpg" alt="Book 2">
+                    <h3>إكتشف إثيوبيا</h3>
+                    <p>إكتشف إثيوبيا</p>
+                    <button>شراء الآن</button>
+                </div>
+                
+                
+                
+                
+                <div class="book">
+                    <img src="pics/somalia.jpeg" alt="Book 2">
+                    <h3>إكتشف الصومال</h3>
+                    <p>إكتشف الصومال</p>
+                    <button>شراء الآن</button>
+                </div>
+                
+                
+                
+                <div class="book">
+                    <img src="pics/jibouti.jpeg" alt="Book 2">
+                    <h3>إكتشف جيبوتي</h3>
+                    <p>إكتشف جيبوتي</p>
+                    <button>شراء الآن</button>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="book-categories">
+            <h3>الفئات</h3>
+            <ul>
+                <li><a href="#">الروايات</a></li>
+                <li><a href="#">القصص القصيرة</a></li>
+                <li><a href="#">الكتب العلمية</a></li>
+                <li><a href="#">كتب التنمية البشرية</a></li>
+            </ul>
+        </div>
+        <div class="sample-chapters">
+            <h3>فصول تجريبية</h3>
+            <div class="sample-list">
+                <!-- Example Sample Chapter Item -->
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب "الرئيس إسياس أفورقي  "</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب "العودة الطوعية  "</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب " الدين والدولة في إرتريا وإثيوبيا"</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب " إثيوبيا"</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+
+
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب " حوار البندقية"</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+
+
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب  " جولة مع أروقة الدبلوماسية الإرترية العربية"</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+
+
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب " كفاحي في حرب التحرير الإرترية"</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+
+
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب " لن نفترق"</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+
+
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب " الثقافة السياسية والهوية الوطنية في أفريقيا"</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+
+                <div class="sample-item">
+                    <h4>الفصل الأول من كتاب " تاريخ البحر الأحمر"</h4>
+                    <p>استمتع بقراءة الفصل الأول من الكتاب لتتعرف على محتواه وأسلوب الكتابة.</p>
+                    <a href="#" class="read-sample">اقرأ الآن</a>
+                </div>
+                <!-- Add more sample chapters as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="index2.html">من نحن</a>
+            <a href="index3.html">الكتب</a>
+            <a href="index4.html">المتجر</a>
+            <a href="index5.html">المدونة</a>
+            <a href="index6.html">الفعاليات</a>
+            <a href="index7.html">اتصل بنا</a>
+            <a href="index8.html">الأسئلة الشائعة</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="بريدك الإلكتروني">
+            <button>اشترك</button>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadi Press</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="pics/hadi press.png" alt="Logo">
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="index2.html">من نحن</a>
+            <div class="dropdown">
+                <a href="index3.html" class="dropbtn">الكتب</a>
+                <div class="dropdown-content">
+                    <a href="#fiction">روايات</a>
+                    <a href="#non-fiction">غير روائية</a>
+                    <a href="index9.html">كتب الأطفال</a>
+                </div>
+            </div>
+            <a href="index4.html">المتجر</a>
+            <a href="index5.html">المدونة</a>
+            <a href="index6.html">الفعاليات</a>
+            <a href="index7.html">تواصل معنا</a>
+            <a href="index8.html">الأسئلة الشائعة</a>
+            <a href="#cart" class="cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            <div class="search-bar">
+                <input type="text" placeholder="بحث...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<!-- Rest of your HTML content -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.querySelector(".menu-icon");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuIcon.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+            menuIcon.classList.toggle("active");
+        });
+    });
+</script>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+        <h1>مرحباً بكم في هادي بريس</h1>
+        <p>اكتشفوا عالماً من القصص الساحرة والشخصيات التي لا تُنسى.</p>
+        </div>
+    </section>
+
+    <section class="featured-books">
+        <h2>الكتب المميزة</h2>
+        <div class="book-container">
+            <div class="book">
+                <img src="pics/zakira.jpeg" alt="Book 2">
+                <h3>من كنوز الذاكرة</h3>
+                <p>خلاصة رحلة ثمانين عاما من الغربة</p>
+                <button>شراء الآن</button>
+            </div>
+            
+            
+            <div class="book">
+                <img src="pics/Hamadnaka.jpeg" alt="Book 2">
+                <h3>أرهى حمدناكا</h3>
+                <p>
+                    من أدغال الثورة في أفريقيا إلى قبة البرلمان السويدي
+                </p>
+                <button>شراء الآن</button>
+            </div>
+            
+            
+            <div class="book">
+                <img src="pics/aziz.jpeg" alt="Book 2">
+                <h3>عزيز</h3>
+                <p>رواية عزيز</p>
+                <button>شراء الآن</button>
+            </div>
+
+
+            <div class="book">
+                <img src="pics/tabsit.jpeg" alt="Book 2">
+                <h3>التبسيط في فهم التخطيط</h3>
+                <p>مفاهيم نظرية وخطوات عملية لفهم التخطيط الإستراتيجي
+                </p>
+                <button>شراء الآن</button>
+            </div>
+
+
+
+
+            <div class="book">
+                <img src="pics/president isiyas afwerki.jpg" alt="كتاب 1">
+                <h3>الرئيس إسياس أفورقي</h3>
+                <p>مسيرة قيادة الثورة والدولة</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="book">
+                <img src="pics/WhatsApp Image 2024-07-31 at 18.14.01.jpeg" alt="كتاب 2">
+                <h3>العودة الطوعية</h3>
+                <p>معضلات الهجرة عن اللاجئين الإرتريين</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="book">
+                <img src="pics/aldin wa aldawla fi eritrea.jpg" alt="كتاب 3">
+                <h3>الدين والدولة في إرتريا وإثيوبيا</h3>
+                <p>خلال الألف الأول قبل وبعد الميلاد</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="book">
+                <img src="pics/ethiopia.jpg" alt="كتاب 3">
+                <h3>إثيوبيا</h3>
+                <p>التوسع وتأسيس الدولة</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="book">
+                <img src="pics/hiwar albundigeya.jpg" alt="كتاب 3">
+                <h3>حوار البندقية</h3>
+                <p>الأجهزة الخفية في الحرب الإثيوبية الإرترية</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="book">
+                <img src="pics/jawla fi arweket aldiplomasia al eritrea.jpg" alt="كتاب 3">
+                <h3>جولة مع أروقة الدبلوماسية الإرترية العربية</h3>
+                <p>مع سليمان أدم سليمان</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="book">
+                <img src="pics/kifahi fi harb altahrir.jpg" alt="كتاب 3">
+                <h3>كفاحي في حرب التحرير الإرترية</h3>
+                <p>يوميات المناضل إدريس أدم هنقلا</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="book">
+                <img src="pics/len nefterek.jpg" alt="Book 1">
+                <h3>لن نفترق</h3>
+                <p>نشوء الحركة السياسية في إرتريا</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="book">
+                <img src="pics/religious culture.jpg" alt="Book 1">
+                <h3>الثقافة السياسية والهوية الوطنية في أفريقيا</h3>
+                <p>الثقافة السياسية والهوية الوطنية في أفريقيا</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="book">
+                <img src="pics/tarikh albahr alahmar.jpg" alt="Book 2">
+                <h3>تاريخ البحر الأحمر</h3>
+                <p>من ديليسبس حتى اليوم</p>
+                <button>شراء الآن</button>
+            </div>
+
+
+
+
+
+            <div class="book">
+                <img src="pics/sudan.jpeg" alt="Book 2">
+                <h3>إكتشف السودان</h3>
+                <p>إكتشف السودان</p>
+                <button>شراء الآن</button>
+            </div>
+
+
+
+            <div class="book">
+                <img src="pics/eritrea.jpeg" alt="Book 2">
+                <h3>إكتشف إرتريا</h3>
+                <p>إكتشف إرتريا</p>
+                <button>شراء الآن</button>
+            </div>
+
+
+
+
+            <div class="book">
+                <img src="pics/ethiopiaa.jpeg" alt="Book 2">
+                <h3>إكتشف إثيوبيا</h3>
+                <p>إكتشف إثيوبيا</p>
+                <button>شراء الآن</button>
+            </div>
+
+
+
+
+            <div class="book">
+                <img src="pics/somalia.jpeg" alt="Book 2">
+                <h3>إكتشف الصومال</h3>
+                <p>إكتشف الصومال</p>
+                <button>شراء الآن</button>
+            </div>
+
+
+
+            <div class="book">
+                <img src="pics/jibouti.jpeg" alt="Book 2">
+                <h3>إكتشف جيبوتي</h3>
+                <p>إكتشف جيبوتي</p>
+                <button>شراء الآن</button>
+            </div>
+
+          
+            
+
+        </div>
+    </section>
+
+
+
+    <!-- About the Author Section -->
+    <section class="about-author">
+        <div class="container">
+            <h2> من نحن</h2>
+            <div class="author-content">
+                <div class="author-photo">
+                    <img src="pics/library-with-books.jpg" alt="صورة المؤلف">
+                </div>
+                <div class="author-biography">
+                    <h3>قصتنا</h3>
+                    <p>بدأت هادي بريس كمشروع شغوف، مدفوعًا بحبنا للأدب. واليوم، نفخر برعاية مجموعة تدعو القراء للاستكشاف
+                        والتعلم والتواصل من
+                        خلال قوة الكلمات.</p>
+                    <h3>هدفنا</h3>
+                    <p>مهمتنا في هادي بريس هي إشعال حب القراءة من خلال تقديم مجموعة متنوعة من الكتب عالية الجودة. نحن نطمح
+                        إلى تعزيز مجتمع
+                        من القراء المتحمسين، وخلق مساحات حيث تنبض القصص بالحياة وتزدهر الخيال.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--our services section start-->
+    <section id="services" class="services-section">
+        <h2>خدماتنا</h2>
+        <div class="services-container">
+            <div class="service">
+                <i class="fas fa-book-open"></i>
+                <h3>
+                    تشكيلة واسعة</h3>
+                <p>اكتشف مجموعة متنوعة من الكتب التي تغطي مختلف الأنواع لتناسب كل تفضيلات القراءة.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>شحن سريع</h3>
+                <p>استمتع بخيارات شحن سريعة وموثوقة لتوصيل كتبك المفضلة إلى باب منزلك.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-comments"></i>
+                <h3>
+                    توصيات الخبراء</h3>
+                <p>اسمح لخبراء الكتب لدينا بإرشادك بتوصيات مخصصة تناسب ذوقك.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="testimonials">
+        <h2>آراء القراء</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+            <p>"لقد أعادت هادي بريس إحياء شغفي بالقراءة. تضمن مجموعتهم المنسقة بعناية أن كل كتاب تلتقطه هو رحلة ممتعة
+                ."</p>
+                <h4>  - أحمد موسى
+                    </h4>
+            </div>
+            <div class="testimonial">
+                <p>"إن خدمة العملاء الاستثنائية والكتب المختارة بعناية في هادي بريس جعلت منها وجهتي المفضلة للحصول على الكنوز الأدبية."
+                </p>
+             <h4>   - وليد نصر الدين
+                </h4>
+            </div>
+            <div class="testimonial">
+            <p>"باعتباري كاتبًا طموحًا، لم تزودني "هادي بريس" بالإلهام فحسب، بل زودتني أيضًا بشعور بالانتماء للمجتمع بين زملائي محبي
+                الكتب."</p>
+           <h4> - منى علي
+            </h4>
+            </div>
+        </div>
+    </section>
+ 
+
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <div class="container">
+            <h2>الأسئلة الشائعة</h2>
+            <div class="faq-accordion">
+                <!-- FAQ Item -->
+                <div class="faq-item">
+                    <button class="faq-question">ما هي طرق الدفع المتاحة؟</button>
+                    <div class="faq-answer">
+                        <p>نقبل الدفع عبر بطاقات الائتمان، PayPal، والتحويلات المصرفية. تأكد من اختيار الطريقة التي تناسبك
+                            عند إتمام عملية الشراء.</p>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+                <div class="faq-item">
+                    <button class="faq-question">هل يمكنني استرجاع كتاب بعد شرائه؟</button>
+                    <div class="faq-answer">
+                        <p>نحن نقدم سياسة استرجاع لمدة 14 يومًا للكتب غير المفتوحة. يجب أن تكون الكتب في حالتها الأصلية.
+                            لمزيد من التفاصيل، يرجى الاتصال بنا.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">متى سيصل الكتاب الذي طلبته؟</button>
+                    <div class="faq-answer">
+                        <p>تستغرق عملية الشحن عادةً من 5 إلى 7 أيام عمل. سيتم إرسال رقم تتبع لك عبر البريد الإلكتروني عند
+                            شحن الطلب.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">هل الشحن مجاني؟</button>
+                    <div class="faq-answer">
+                        <p>نقدم الشحن المجاني للطلبات التي تتجاوز قيمتها [مقدار محدد]. للشحن الدولي، قد يتم تطبيق رسوم
+                            إضافية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqButtons = document.querySelectorAll('.faq-question');
+
+            faqButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const answer = this.nextElementSibling;
+
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                    } else {
+                        answer.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+<section id="contact" class="contact-section">
+    <h2>تواصل معنا</h2>
+    <p>نحن هنا لمساعدتك. لا تتردد في التواصل لأية استفسارات أو مساعدة.</p>
+    <div class="contact-info">
+        <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <p>البريد الإلكتروني</p>
+            <a href="mailto:info@example.com">hadipress@gmail.com</a>
+        </div>
+        <div class="contact-detail">
+            <i class="fas fa-phone"></i>
+            <p>الهاتف</p>
+            <p class="phone-number">+44 123-456-7890</p>
+        </div>
+        <div class="contact-detail">
+            <i class="fab fa-whatsapp"></i>
+            <p>واتساب</p>
+        <a href="https://api.whatsapp.com/send?phone=441234567890">إبدأ الدردشة</a>
+        </div>
+        <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>العنوان</p>
+            <p>20 Dawes Road, London, England, SW6 7EN</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="index2.html">من نحن</a>
+            <a href="index3.html">الكتب</a>
+            <a href="index4.html">المتجر</a>
+            <a href="index5.html">المدونة</a>
+            <a href="index6.html">الفعاليات</a>
+            <a href="index7.html">اتصل بنا</a>
+            <a href="index8.html">الأسئلة الشائعة</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="بريدك الإلكتروني">
+            <button>اشترك</button>
+        </div>
+    </footer>
+</body>
+
+</html>

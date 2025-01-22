@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadi Press</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+
+
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="pics/hadi press.png" alt="Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index2.html">من نحن</a>
+                <div class="dropdown">
+                    <a href="index3.html" class="dropbtn">الكتب</a>
+                    <div class="dropdown-content">
+                        <a href="#fiction">روايات</a>
+                        <a href="#non-fiction">غير روائية</a>
+                        <a href="index9.html">كتب الأطفال</a>
+                    </div>
+                </div>
+                <a href="index4.html">المتجر</a>
+                <a href="index5.html">المدونة</a>
+                <a href="index6.html">الفعاليات</a>
+                <a href="index7.html">تواصل معنا</a>
+                <a href="index8.html">الأسئلة الشائعة</a>
+                <a href="#cart" class="cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <div class="search-bar">
+                    <input type="text" placeholder="بحث...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </nav>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Rest of your HTML content -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuIcon.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuIcon.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+<!-- About the Author Section -->
+<section class="about-author">
+    <div class="container">
+        <h2> من نحن</h2>
+        <div class="author-content">
+            <div class="author-photo">
+                <img src="pics/library-with-books.jpg" alt="صورة المؤلف">
+            </div>
+            <div class="author-biography">
+                <h3>قصتنا</h3>
+                <p>بدأت هادي بريس كمشروع شغوف، مدفوعًا بحبنا للأدب. واليوم، نفخر برعاية مجموعة تدعو القراء للاستكشاف والتعلم والتواصل من
+                    خلال قوة الكلمات.</p>
+                <h3>هدفنا</h3>
+                <p>مهمتنا في هادي بريس هي إشعال حب القراءة من خلال تقديم مجموعة متنوعة من الكتب عالية الجودة. نحن نطمح إلى تعزيز مجتمع
+                    من القراء المتحمسين، وخلق مساحات حيث تنبض القصص بالحياة وتزدهر الخيال.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+    <h2>تواصل معنا</h2>
+    <p>نحن هنا لمساعدتك. لا تتردد في التواصل لأية استفسارات أو مساعدة.</p>
+    <div class="contact-info">
+        <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <p>البريد الإلكتروني</p>
+            <a href="mailto:info@example.com">hadipress@gmail.com</a>
+        </div>
+        <div class="contact-detail">
+            <i class="fas fa-phone"></i>
+            <p>الهاتف</p>
+            <p class="phone-number">+44 123-456-7890</p>
+        </div>
+        <div class="contact-detail">
+            <i class="fab fa-whatsapp"></i>
+            <p>واتساب</p>
+        <a href="https://api.whatsapp.com/send?phone=441234567890">إبدأ الدردشة</a>
+
+        </div>
+        <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>العنوان</p>
+            <p>20 Dawes Road, London, England, SW6 7EN</p>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="index2.html">من نحن</a>
+        <a href="index3.html">الكتب</a>
+        <a href="index4.html">المتجر</a>
+        <a href="index5.html">المدونة</a>
+        <a href="index6.html">الفعاليات</a>
+        <a href="index7.html">اتصل بنا</a>
+        <a href="index8.html">الأسئلة الشائعة</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="بريدك الإلكتروني">
+            <button>اشترك</button>
+        </div>
+    </footer>
+</body>
+
+</html>
